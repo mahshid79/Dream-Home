@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================================= file css ================================= -->
+    <link rel="stylesheet" href="./css/bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <title>DreamHome</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+            <!-- ================================= nav ================================= -->
+            <nav class="navbar navbar-expand-lg bg-white shadow-lg" aria-label="Offcanvas navbar large">
+                <div class="container-fluid w-90">
+                    <a class="navbar-brand" href="#"><img src="./css/image/logo.png" alt="" width="65"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand" href="#"><img src="./css/image/logo.png" alt="" width="65"></a>
+                            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-lg-center justify-content-md-start justify-content-center align-items-lg-center flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="#">Residence</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="#">Agents</a>
+                                </li>
+                                <li class="nav-item position-relative">
+                                    <a class="nav-link d-flex dropdown" href="#">
+                                        <div class="wrapper">
+                                            <div class="selected">Eng</div>
+                                            <img src="./css/image/united-kingdom.png" alt="" class="selectedImg" width="20">
+                                        </div>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                        <div class="list">
+                                            <div class="item">
+                                                <div class="text-lan">Eng</div>
+                                                <img src="./css/image/united-kingdom.png" alt="" width="20">
+                                            </div>
+                                            <div class="item">
+                                                <div class="text-lan">Fa</div>
+                                                <img src="./css/image/iran (1).png" alt="" width="20">
+                                            </div>
+                                            <div class="item">
+                                                <div class="text-lan">Fr</div>
+                                                <img src="./css/image/france.png" alt="" width="20">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="d-grid margin-button">
+                                <button class="btn btn-dark rounded-0 py-3 px-4">Sign in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- ================================= header ================================= -->
+            <header class="container-fluid home">
+                <div class="content">
+                    <h1 class="">Find your dream home</h1>
+                    <p class="text-header mt-5">This is where you can fild a dream home of your choice stress</p>
+                </div>
+                <div class="col width py-5">
+                    <div class="container-fluid bg-white shadow-lg p-5 rounded-4">
+                        <div class="col">
+                            <div class="title-search">Search the price you are looking for hero</div>
+                        </div>
+                        <div class="col mt-5 mb-3">
+                            <div class="d-flex flex-md-row flex-column justify-content-between ">
+                                <div class="position-relative width-search">
+                                    <input type="text" class="border-style py-3 ps-3 w-100" placeholder="Location">
+                                    <span class="material-symbols-outlined icon">location_on</span>
+                                </div>
+                                <div class="position-relative width-search">
+                                    <input type="text" class="border-style py-3 ps-3 w-100" placeholder="Type">
+                                    <span class="material-symbols-outlined icon">house</span>
+                                </div>
+                                <div class="position-relative width-search mb-sm-3">
+                                    <input type="text" class="border-style py-3 ps-3 w-100" placeholder="Price">
+                                    <span class="material-symbols-outlined icon">monetization_on</span>
+                                </div>
+                                <div class="dis-g">
+                                    <button class="btn btn-dark py-3 px-4">Search Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- ================================= counting ================================= -->
+            <div class="container-fluid my-5">
+                <div class="container-xl width">
+                    <div class="row d-md-flex justify-content-md-start">
+                        <div class="col-lg-8">
+                            <div class="row col-counting">
+                                <div class="col-lg-5 col-md-5 col-sm-12">
+                                    <div class="d-flex flex-row justify-content-between dis-flex">
+                                        <div class="text-counting">
+                                            <h2>2100+</h2>
+                                            <p>Premium House</p>
+                                        </div>
+                                        <div class="vr"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-12">
+                                    <div class="d-flex flex-row justify-content-between dis-flex">
+                                        <div class="text-counting">
+                                            <h2>2000+</h2>
+                                            <p>Happy Customers</p>
+                                        </div>
+                                        <div class="vr"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12">
+                                    <div class="d-flex flex-row justify-content-between dis-flex">
+                                        <div class="text-counting">
+                                            <h2>50+</h2>
+                                            <p class="ms-0">Awards</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ================================= popular ================================= -->
+            <div class="container-fluid py-5 px-0">
+                <div class="container-xl width">
+                    <div class="mb-4">
+                        <h4 class="text">Popular</h4>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-3 flex-col">
+                        <h2 class="title-popular">Our popular residence</h2>
+                        <a href="#" class="explore text-dark d-flex">Explore All<span class="material-symbols-outlined">trending_flat</span></a>
+                    </div>
+                    <div>
+                        <div class="row d-flex justify-content-lg-between justify-content-md-around  justify-content-sm-center">
+                            <div class="col-lg-3 col-md-5 col-sm-6 shadow-lg p-0 mb-3">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="#"><img class="img-fluid img-hover" src="./css/image/condo-2618421_1920.jpg" alt=""></a>
+                                </div>
+                                <div class="m-4 pb-0">
+                                    <p class="text-Agod d-flex align-items-center"><span class="material-symbols-outlined">location_on</span>Agod, surulere lagos</p>
+                                </div>
+                                <div class="d-flex m-4">
+                                    <small class="flex-fill d-flex align-items-center"><span class="material-symbols-outlined pe-1">bed</span>4 Bed</small>
+                                    <small class="flex-fill d-flex align-items-center">
+                                        <input type="checkbox" id="yes" class="me-1">
+                                        <label for="yes">10 * 10</label>
+                                    </small>
+                                    <small class="flex-fill d-flex align-items-center">
+                                        <input type="checkbox" id="no">
+                                        <label for="no">2000m<sup>2</sup></label>
+                                    </small>
+                                    
+                                </div>
+                                <div class="m-4 d-flex justify-content-between align-items-center">
+                                    <button class="btn btn-search">Search Now</button>
+                                    <p class="price mb-0">$750,000.00</p>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-3 col-md-5 col-sm-6 shadow-lg p-0 mb-3 mx-2">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="#"><img class="img-fluid img-hover" src="./css/image/apartment-2179337_1920.jpg" alt=""></a>
+                                </div>
+                                <div class="m-4 pb-0">
+                                    <p class="text-Agod d-flex align-items-center"><span class="material-symbols-outlined">location_on</span>Agod, surulere lagos</p>
+                                </div>
+                                <div class="d-flex m-4">
+                                    <small class="flex-fill d-flex align-items-center"><span class="material-symbols-outlined pe-1">bed</span>4 Bed</small>
+                                    <small class="flex-fill d-flex align-items-center">
+                                        <input type="checkbox" id="yes" class="me-1">
+                                        <label for="yes">10 * 10</label>
+                                    </small>
+                                    <small class="flex-fill d-flex align-items-center">
+                                        <input type="checkbox" id="no">
+                                        <label for="no">2000m<sup>2</sup></label>
+                                    </small>
+                                    
+                                </div>
+                                <div class="m-4 d-flex justify-content-between align-items-center">
+                                    <button class="btn btn-search">Search Now</button>
+                                    <p class="price mb-0">$750,000.00</p>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-3 col-md-5 col-sm-6 shadow-lg p-0 mb-3">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="#"><img class="img-fluid img-hover" src="./css/image/wepik-photo-mode-2022817-04047.png" alt=""></a>
+                                </div>
+                                <div class="m-4 pb-0">
+                                    <p class="text-Agod d-flex align-items-center"><span class="material-symbols-outlined">location_on</span>Agod, surulere lagos</p>
+                                </div>
+                                <div class="d-flex m-4">
+                                    <small class="flex-fill d-flex align-items-center"><span class="material-symbols-outlined pe-1">bed</span>4 Bed</small>
+                                    <small class="flex-fill d-flex align-items-center">
+                                        <input type="checkbox" id="yes" class="me-1">
+                                        <label for="yes">10 * 10</label>
+                                    </small>
+                                    <small class="flex-fill d-flex align-items-center">
+                                        <input type="checkbox" id="no">
+                                        <label for="no">2000m<sup>2</sup></label>
+                                    </small>
+                                    
+                                </div>
+                                <div class="m-4 d-flex justify-content-between align-items-center">
+                                    <button class="btn btn-search">Search Now</button>
+                                    <p class="price mb-0">$750,000.00</p>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ================================= service ================================= -->
+            <div class="container-fluid bg-color mt-5 py-5 p-0">
+                <div class="container-xl width">
+                    <div class="row g-0 align-items-center flex-column flex-md-row">
+                        <div class="col-lg-4 col-md-5 mt-lg-5 center mb-sm-5 m-start">
+                            <div class="title-services">
+                                <h3 class="text-white">Our Services</h3>
+                            </div>
+                            <div class="my-5">
+                                <p class="text-white text-services">This is where you can find a dream home of your choice without stThis is where you can find a dream home of your choice without stressressyour</p>
+                            </div>
+                            <div class="">
+                                <button class="btn btn-services bg-white rounded-0 py-3 px-5">See More</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-7 col-sm-6 h-100 pt-5">
+                            <div class="swiper mySwiper pt-3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slider"><img src="./css/image/r-architecture-KqMaA8gDfl0-unsplash.jpg"/><p class="text-white mt-4 text-quality">Quality Residence</p></div>
+                                    <div class="swiper-slide slider"><img src="./css/image/r-architecture-updbdgKxp5k-unsplash.jpg"/><p class="text-white mt-4 text-quality">Top notch Facilities</p></div>
+                                    <div class="swiper-slide slider"><img src="./css/image/r-architecture-KqMaA8gDfl0-unsplash.jpg"/></div>
+                                    <div class="swiper-slide slider"><img src="./css/image/r-architecture-updbdgKxp5k-unsplash.jpg"/></div>
+                                    <div class="swiper-slide slider"><img src="./css/image/r-architecture-KqMaA8gDfl0-unsplash.jpg"/></div>
+                                    <div class="swiper-slide slider"><img src="./css/image/r-architecture-updbdgKxp5k-unsplash.jpg"/></div>
+                                </div>
+                                <div class="d-flex justify-content-end  span">
+                                    <span class="material-symbols-outlined text-white p-2 me-3 swiper-span-prev">keyboard_backspace</span>
+                                    <span class="material-symbols-outlined bg-white p-2 swiper-span-next">arrow_right_alt</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================================= why choose ================================= -->
+            <div class="container-fluid bg-choose p-0">
+                <div class="container-xl width">
+                    <div class="d-flex flex-column align-items-center py-5">
+                        <h4 class="title-choose mb-4">Why Choose us</h4>
+                        <p class="text-choose text-center">Our goal is at the heart of all that we do. We made our clients happiness our sole priority.</p>
+                    </div>
+                    <div class="row d-flex justify-content-between justify-content-md-center justify-content-sm-center">
+            
+                        <div class="col-lg-3 col-md-4 col-sm-5 shadow-sm mb-5 rounded-4 bg-white mx-lg-2 me-md-3 me-sm-2">
+                            <div class="d-flex justify-content-start align-items-center my-5 px-2">
+                                <img src="./css/image/insurance-company.png" alt="" width="15%" class="me-2">
+                                <h4 class="text-insu mt-2">Insurance</h4>
+                            </div>
+                            <div class="m-2 bg-secondary rounded-4">
+                                <p class="p-4 text-this">This is where you can find a dream home of your choice without stThis is where you can find a dream home of your choice without stressresThis is where you</p>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-4 col-sm-5 shadow-sm mb-5 rounded-4 bg-white mx-lg-2 me-md-3 me-sm-2">
+                            <div class="d-flex justify-content-start align-items-center my-5 ps-2">
+                                <img src="./css/image/insurance-company.png" alt="" width="15%" class="me-2">
+                                <h4 class="text-insu mt-2">Insurance</h4>
+                            </div>
+                            <div class="m-2 bg-secondary rounded-4">
+                                <p class="p-4 text-this">This is where you can find a dream home of your choice without stThis is where you can find a dream home of your choice without stressresThis is where you</p>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-4 col-sm-5 shadow-sm mb-5 rounded-4 bg-white mx-lg-2 me-md-3 me-sm-2">
+                            <div class="d-flex justify-content-start align-items-center my-5 ps-2">
+                                <img src="./css/image/worker.png" alt="" width="15%" class="me-2">
+                                <h4 class="text-insu mt-2">Service engineers</h4>
+                            </div>
+                            <div class="m-2 bg-secondary rounded-4">
+                                <p class="p-4 text-this">This is where you can find a dream home of your choice without stThis is where you can find a dream home of your choice without stressresThis is where you</p>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-4 col-sm-5 shadow-sm mb-5 rounded-4 bg-white mx-lg-2 me-md-3 me-sm-2">
+                            <div class="d-flex justify-content-start align-items-center my-5 ps-2">
+                                <img src="./css/image/customer-service.png" alt="" width="15%" class="me-2">
+                                <h4 class="text-insu mt-2">24/7 customer service</h4>
+                            </div>
+                            <div class="m-2 bg-secondary rounded-4">
+                                <p class="p-4 text-this">This is where you can find a dream home of your choice without stThis is where you can find a dream home of your choice without stressresThis is where you</p>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-4 col-sm-5 shadow-sm mb-5 rounded-4 bg-white mx-lg-2 me-md-3 me-sm-2">
+                            <div class="d-flex justify-content-start align-items-center my-5 ps-2">
+                                <img src="./css/image/insurance-company.png" alt="" width="15%" class="me-2">
+                                <h4 class="text-insu mt-2">Insurance</h4>
+                            </div>
+                            <div class="m-2 bg-secondary rounded-4">
+                                <p class="p-4 text-this">This is where you can find a dream home of your choice without stThis is where you can find a dream home of your choice without stressresThis is where you</p>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-4 col-sm-5 shadow-sm mb-5 rounded-4 bg-white mx-lg-2  me-md-3 me-sm-2">
+                            <div class="d-flex justify-content-start align-items-center my-5 ps-2">
+                                <img src="./css/image/payment-method.png" alt="" width="15%" class="me-2">
+                                <h4 class="text-insu mt-2">Installmental payment</h4>
+                            </div>
+                            <div class="m-2 bg-secondary rounded-4">
+                                <p class="p-4 text-this">This is where you can find a dream home of your choice without stThis is where you can find a dream home of your choice without stressresThis is where you</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-sm-4">
+                        <div class="col-12 d-flex justify-content-end dis-flex">
+                            <p class="text-see">See All</p>
+                            <span class="material-symbols-outlined">trending_flat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================================= our team ================================= -->
+            <div class="container-fluid bg-white">
+                <div class="container width mt-5">
+                    <div class="d-flex flex-column align-items-center py-5">
+                        <h5 class="title-ourteam mb-4">Our team</h5>
+                        <h4 class="title-meet">Meet our team</h4>
+                        <p class="text-ourteam">Our goal is at the heart of all that we do. We made our clients happiness our sole priority.</p>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+        
+                        <div class="col-lg-4 col-md-4 mb-5">
+                            <div class="shadow-sm mb-3 rounded-3 bg-team text-center">
+                                <img src="./css/image/3.png" alt="" class="img-fluid">
+                            </div>
+                            <p class="text-center text-team">Project Manager</p>
+                        </div>
+        
+                        <div class="col-lg-4 col-md-4 mb-5">
+                            <div class="shadow-sm mb-3 rounded-3 bg-team text-center">
+                                <img src="./css/image/3.png" alt="" class="img-fluid">
+                            </div>
+                            <p class="text-center text-team">Marketing Head</p>
+                        </div>
+        
+                        <div class="col-lg-4 col-md-4 mb-5">
+                            <div class="shadow-sm mb-3 rounded-3 bg-team text-center">
+                                <img src="./css/image/3.png" alt="" class="img-fluid">
+                            </div>
+                            <p class="text-center text-team">Head of Services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================================= Testimonials ================================= -->
+            <div class="container-fluid bg-color">
+                <div class="container-xxl width mt-5">
+                    <div class="d-flex flex-column align-items-center py-5">
+                        <h5 class="title-test mb-4">Testimonials</h5>
+                        <h4 class="title-whatclients text-white mb-4">What clients says</h4>
+                        <p class="text-whatclients">Our goal is at the heart of all that we do. We made our clients happiness our sole priority.</p>
+                    </div>
+                    <div class="row d-flex justify-content-between">
+                        
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="col-lg-4 col-md-5 col-sm-10 rounded-4 bg-white w-100 p-2">
+                                        <div class="d-flex justify-content-between my-5">
+                                            <img src="./css/image/profile (1).png" alt="" width="15%" height="10%" class="me-3 mt-2">
+                                            <div class="col mt-3">
+                                                <h4 class="text-kim">Kim Davids</h4>
+                                                <h6 class="text-banker">Banker</h6>
+                                            </div>
+                                            <img src="./css/image/rating.png" alt="" width="20%" height="10%" class="">
+                                        </div>
+                                        <div class="bg-secondary rounded-4">
+                                            <p class="p-2 p-sm-4 comment">This is where you can find a dream home of your choice without stThis is where you can find a dream home of your choice without stressreschoice without stThis is where you can find</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <div class="col-lg-4 col-md-5 col-sm-10 rounded-4 bg-white w-100 p-2">
+                                        <div class="d-flex justify-content-between my-5">
+                                            <img src="./css/image/profile (1).png" alt="" width="15%" height="10%" class="me-3 mt-2">
+                                            <div class="col mt-3">
+                                                <h4 class="text-kim">Kim Davids</h4>
+                                                <h6 class="text-banker">Banker</h6>
+                                            </div>
+                                            <img src="./css/image/rating.png" alt="" width="20%" height="10%" class="">
+                                        </div>
+                                        <div class="bg-secondary rounded-4">
+                                            <p class="p-2 p-sm-4 comment">This is where you can find a dream home of your choice without stThis is where you can find a dream home of your choice without stressreschoice without stThis is where you can find</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="col-lg-4 col-md-5 col-sm-10 rounded-4 bg-white w-100 p-2">
+                                        <div class="d-flex justify-content-between my-5">
+                                            <img src="./css/image/profile (1).png" alt="" width="15%" height="10%" class="me-3 mt-2">
+                                            <div class="col mt-3">
+                                                <h4 class="text-kim">Kim Davids</h4>
+                                                <h6 class="text-banker">Banker</h6>
+                                            </div>
+                                            <img src="./css/image/rating.png" alt="" width="20%" height="10%" class="">
+                                        </div>
+                                        <div class="bg-secondary rounded-4">
+                                            <p class="p-2 p-sm-4 comment">This is where you can find a dream home of your choice without stThis is where you can find a dream home of your choice without stressreschoice without stThis is where you can find</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <div class="col-lg-4 col-md-5 col-sm-10 rounded-4 bg-white w-100 p-2">
+                                        <div class="d-flex justify-content-between my-5">
+                                            <img src="./css/image/profile (1).png" alt="" width="15%" height="10%" class="me-3 mt-2">
+                                            <div class="col mt-3">
+                                                <h4 class="text-kim">Kim Davids</h4>
+                                                <h6 class="text-banker">Banker</h6>
+                                            </div>
+                                            <img src="./css/image/rating.png" alt="" width="20%" height="10%" class="">
+                                        </div>
+                                        <div class="bg-secondary rounded-4">
+                                            <p class="p-2 p-sm-4 comment">This is where you can find a dream home of your choice without stThis is where you can find a dream home of your choice without stressreschoice without stThis is where you can find</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="col-lg-4 col-md-5 col-sm-10 rounded-4 bg-white w-100 p-2">
+                                        <div class="d-flex justify-content-between my-5">
+                                            <img src="./css/image/profile (1).png" alt="" width="15%" height="10%" class="me-3 mt-2">
+                                            <div class="col mt-3">
+                                                <h4 class="text-kim">Kim Davids</h4>
+                                                <h6 class="text-banker">Banker</h6>
+                                            </div>
+                                            <img src="./css/image/rating.png" alt="" width="20%" height="10%" class="">
+                                        </div>
+                                        <div class="bg-secondary rounded-4">
+                                            <p class="p-2 p-sm-4 comment">This is where you can find a dream home of your choice without stThis is where you can find a dream home of your choice without stressreschoice without stThis is where you can find</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ms-2">
+                                    <div class="col-lg-4 col-md-5 col-sm-10 rounded-4 bg-white w-100 p-2">
+                                        <div class="d-flex justify-content-between my-5">
+                                            <img src="./css/image/profile (1).png" alt="" width="15%" height="10%" class="me-3 mt-2">
+                                            <div class="col mt-3">
+                                                <h4 class="text-kim">Kim Davids</h4>
+                                                <h6 class="text-banker">Banker</h6>
+                                            </div>
+                                            <img src="./css/image/rating.png" alt="" width="20%" height="10%" class="">
+                                        </div>
+                                        <div class="bg-secondary rounded-4">
+                                            <p class="p-2 p-sm-4 comment">This is where you can find a dream home of your choice without stThis is where you can find a dream home of your choice without stressreschoice without stThis is where you can find</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex justify-content-center mt-5">
+                                <span class="material-symbols-outlined text-white p-3 swiper-span-prev">keyboard_backspace</span>
+                                <span class="material-symbols-outlined border-right p-3 swiper-span-next">arrow_right_alt</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-sm-4">
+                        <div class="col-12 d-flex justify-content-center my-5">
+                            <h2 class="text-white title-ready">Ready to choose your dream home?</h2>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center mb-5">
+                            <button class="btn btn-started bg-white rounded-0 py-4 px-5">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================================= footer ================================= -->
+            <div class="container-fluid bg-footer pb-1 pt-5">
+                <div class="container-lg width">
+                    <div class="row g-0 align-items-center flex-column flex-md-row">
+                        <div class="col-lg-4 col-md-4 center mb-sm-12">
+                            <div class="">
+                                <img src="./css/image/logo-footer.png" alt="" width="20%">
+                            </div>
+                            <div class="my-3">
+                                <p class="text-white text-footer">Our goal is at the head of all that we do.</p>
+                            </div>
+                            <div class="text-white mb-3">
+                                <a class="text-decoration-none text-white w-icon" href=""><i class="ri-facebook-circle-fill"></i></a>
+                                <a class="text-decoration-none text-white mx-3 w-icon" href=""><i class="ri-twitter-fill"></i></a>
+                                <a class="text-decoration-none text-white w-icon" href=""><i class="ri-linkedin-box-fill"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-12 mt-sm-5">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-12 text-center mb-footer">
+                                    <h5 class="text-white title-footer">Page</h5>
+                                    <ul class="list-footer">
+                                        <li class="list-item">
+                                            <a class="link" href="#">Homepage</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="link" href="#">Features</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="link" href="#">About Us</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="link" href="#">Agents</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-12 text-center">
+                                    <h5 class="text-white title-footer">Support</h5>
+                                    <ul class="list-footer">
+                                        <li class="list-item">
+                                            <a class="link" href="#">FAQ,s</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="link" href="#">Support Center</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="link" href="#">Security</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-12 text-center">
+                                    <h5 class="text-white title-footer">Support</h5>
+                                    <ul class="list-footer">
+                                        <li class="list-item">
+                                            <a class="link" href="#">FAQ,s</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="link" href="#">Support Center</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="link" href="#">Security</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-white">
+                <p class="text-white text-center text-copyright">&copy;2022.All Right Reserved</p>
+            </div>
+    </div>
+    
+
+
+
+
+
+
+        <!-- ================================= file js ================================= -->
+        <script src="./css/bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/jquery-3.6.1.min.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                centeredSlides: false,
+                slidesPerGroupSkip: 1,
+                grabCursor: true,
+                keyboard: {
+                    enabled: true,
+                },
+                breakpoints: {
+                769: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 1,
+                },
+                },
+                navigation: {
+                nextEl: ".swiper-span-next",
+                prevEl: ".swiper-span-prev",
+                },
+            });
+        </script>
+
+</body>
+</html>

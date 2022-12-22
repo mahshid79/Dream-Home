@@ -1,0 +1,240 @@
+@import url(./font.css);
+
+body{
+    overflow-x: hidden;
+}
+.width{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+html, body{
+    position: relative;
+    height: 100%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+}
+.slider img{
+    display: block;
+    width: 70%;
+}
+
+@media only screen and (min-width: 769px) {
+    .swiper-slide:first-child {
+        transition: transform 50ms;
+    }
+    .swiper-slide.swiper-slide-active:first-child {
+        transform: translateX(0%);
+        z-index: 2;
+    }
+    .swiper-slide:nth-child(2) {
+        transition: transform 0ms;
+    }
+    .swiper-slide.swiper-slide-next:nth-child(2) {
+        transform: translateX(0%);
+        z-index: 1;
+    }
+}
+/* ======================== nav ======================== */
+.w-90{
+    width: 90%;
+    margin: 0 auto;
+}
+.wrapper{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    cursor: pointer;
+}
+.list{
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 130px;
+    display: none;
+    cursor: pointer;
+}
+.show{
+    display: block;
+}
+.item{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    gap: .5rem;
+}
+.item:hover{
+    background-color: gainsboro;
+}
+/* ======================== header ======================== */
+header{
+    padding: 2rem .5rem !important;
+}
+.home{
+    position: relative;
+    min-height: 80vh;
+    background: url(./image/PngItem_866856.png);
+    background-size: 58%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.home .content{
+    max-width: 40rem;
+    padding: 4rem 0;
+    margin: 0 7rem;
+}
+.border-style{
+    background: #FFFFFF;
+    border: 2px solid #D6D6D6;
+    width: 80%;
+}
+.border-style:focus{
+    border-color: #3382C3 !important;
+}
+.icon{
+    position: absolute;
+    top: 14px;
+    left: 85%;
+    color: #989898;
+}
+.width-search{
+    width: 25%;
+}
+
+/* ======================== popular ======================== */
+.btn-search{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 0;
+    padding: .5em 1em;
+}
+.btn-search:hover{
+    background-color: rgb(46, 45, 45) !important;
+    color: white !important;
+}
+.img-hover:hover{
+    opacity: .75 !important;
+}
+
+/* ======================== service ======================== */
+.bg-color{
+    background-color: #030718;
+}
+.btn-services:hover{
+    border-radius: 10px !important;
+    background-color: #3382C3 !important;
+    color: white !important;
+}
+
+/* ======================== why choose ======================== */
+.bg-choose{
+    background-color: #edf5fe;
+}
+.bg-secondary{
+    background-color: #f3f3f5 !important;
+}
+
+/* ======================== our team ======================== */
+.bg-team{
+    background-color: #e4e4fa;
+}
+
+/* ======================== Testimonials ======================== */
+.border-right{
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+}
+.btn-started:hover{
+    border-radius: 10px !important;
+    background-color: #3382C3 !important;
+    color: white !important;
+}
+
+/* ======================== footer ======================== */
+.bg-footer{
+    background-color: #03081c;
+}
+.w-icon{
+    font-size: x-large;
+}
+
+
+
+
+@media (max-width:992px){
+    .width{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .w-90{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .width-nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .margin-button{
+        margin-bottom: 4rem;
+    }
+    .home{
+        background-image: none;
+    }
+    .home .content{
+        max-width: 40rem;
+        padding: 2rem 0;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (max-width:768px){
+    .icon{
+        left: 92%;
+    }
+    .width-search{
+        width: 100%;
+    }
+    .dis-g{
+        display: grid;
+    }
+    .dis-flex{
+        display: flex;
+        justify-content: center !important;
+    }
+    .vr, .dis-none-2{
+        display: none;
+    }
+    .center, .text-whatclients, .text-counting{
+        text-align: center;
+    }
+    .span{
+        display: flex;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width:576px){
+    .icon{
+        left: 85%;
+    }
+    .btn-services{
+        margin-bottom: 3em;
+    }
+}
